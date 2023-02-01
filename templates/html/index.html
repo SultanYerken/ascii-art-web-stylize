@@ -1,0 +1,68 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+  <head>
+   
+    <meta charset="utf-8">
+    <title>ascii art web</title>
+    <link href="../static/css/projct.css" rel="stylesheet" type="text/css">
+   
+  </head>
+
+
+  <body> 
+  
+    <h1 >Ascii art  web</h1>
+   
+    <div class="row">
+      <form action="/ascii-art"  method="post" target="_self" >
+     
+
+            <label for="inp"></label> 
+            <p style="text-align: center;">
+            <textarea  name="text" id="inp"  cols="50" rows="7" placeholder="Write something"></textarea> 
+            
+    
+            <p class="Choose" >Choose a font:</p>
+            
+
+            <p style="text-align: center;"> 
+            <input class="button" type="submit" id="standard" name="font" value="standard">
+            <label for="standard"></label>
+            <input class="button" type="submit" id="shadow" name="font" value="shadow">
+            <label for="shadow"></label>
+            <input class="button" type="submit" id="thinkertoy"  name="font" value="thinkertoy">
+            <label for="thinkertoy"></label><br> <br>
+            </p>
+
+
+            
+
+          <div class="output">
+            <pre>{{ .Body }}</pre>
+          </div>
+           
+ 
+      </form>
+
+
+      <p class="Arigato" title="Arigato : )"> 
+      ありがとう
+      </p>   
+     
+
+    </div>
+  </body>
+
+
+</html>
+
+
+
+
+
+
+

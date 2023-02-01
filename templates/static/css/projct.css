@@ -1,0 +1,237 @@
+
+@import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
+
+
+h1 {
+  margin: 25px;
+ 
+  font-size: 200px;
+  text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff, 0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
+  color: #fccaff;
+  font-family: "Sacramento", cursive;
+  text-align: center;
+  animation: blink 12s infinite;
+ 
+}
+
+
+body {
+  display:block;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #222;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent 7px,
+    rgba(0, 0, 0, 0.8) 9px,
+    rgba(0, 0, 0, 0.8) 13px,
+    transparent 13px
+  );
+}
+
+
+#inp{
+  text-align: center; 
+  font-size: 20px;
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+  color: #fff6a9;
+  animation: blinkgold 12s infinite;
+  background: rgba(146, 127, 22, 0.1);
+  /* нельзя менять размер текстареа */
+  resize: none;
+  border-radius: 25px;
+  border-color: #fff6a9;
+  border-width: 1px 4px 1px 4px;
+}
+
+
+.Choose{
+  text-align: center;
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+  color: #fff6a9;
+  animation: blinkgold 12s infinite;
+}
+
+
+.button{
+  background-color: rgba(146, 127, 22, 0.1);
+  padding: 20px 40px;
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+  color: #fff6a9;
+  border-radius: 25px;
+  border-color: #fff6a9;
+  font-size: 20px;
+  animation: blinkgold 12s infinite;
+
+}
+
+
+.output{
+  overflow:auto;
+  text-align:center;
+  height: 400px; 
+  margin: -15px 50px;
+  font-size: 18px;
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+  color: #fff6a9;  
+  animation: blink 12s infinite;
+  
+}
+
+
+.Arigato{
+  text-align: center; 
+  text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff, 0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
+  color: #fccaff; 
+  animation: blink 12s infinite;
+}
+
+
+@keyframes blink {
+  31%,
+  33%,
+  50%{
+    color: #111;
+    text-shadow: none;
+  }
+
+  30%,
+  32%,
+  32%,
+  34%,
+  49%,
+  51%,
+  100% {
+  /* text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000; 
+    color: #fff6a9; */
+
+     text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff, 0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
+  color: #fccaff; 
+  } 
+} 
+
+@keyframes blinkgold {
+  31%,
+  33%,
+  40%,
+  50% {
+    color: #111;
+    text-shadow: none;
+  }  
+  
+  30%,
+  32%,
+  32%,
+  34%,
+  51%,
+  100% { 
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000; 
+  color: #fff6a9;
+  }
+} 
+
+/* laptop */
+ @media only screen and (max-width:1280px){
+
+  h1{
+    font-size: 150px;
+  }
+
+  #inp{
+    font-size:17px;
+    border-radius: 25px ;
+    height: 140px;
+  }
+
+  .Choose{
+    font-size: 15px; 
+  }
+
+  .button{
+    padding: 15px 30px;
+    font-size: 17px;
+    border-radius: 15px;;
+  }
+
+  .output{
+    height: 370px;
+    font-size: 17px;
+    margin: -15px 40px;
+  }
+
+  .Arigato{
+    font-size: 13px;
+  }
+} 
+
+/* iPad */
+@media only screen and (max-width: 810px){
+
+  h1{
+    font-size: 130px;
+  }
+
+  #inp{
+    font-size:13px;
+    border-radius: 25px ;
+    height: 100px;
+  }
+
+  .Choose{
+    font-size: 12px; 
+  }
+
+  .button{
+    padding: 15px 30px;
+    font-size: 13px;
+    border-radius: 15px;;
+  }
+
+  .output{
+   
+    height: 550px;
+    font-size: 13px;
+    margin: -8px 30px;
+  }
+
+  .Arigato{
+    font-size: 8px;
+  }
+}
+
+/* Phone */
+@media only screen and (max-width:480px){
+
+  h1{
+    font-size: 60px;
+  }
+
+  #inp{
+    font-size: 12px;
+    border-radius: 25px ;
+    height: 100px;
+    width: 280px;
+  }
+
+  .Choose{
+    font-size: 11px; 
+  }
+
+  .button{
+    padding: 15px 30px;
+    font-size: 12px;
+    border-radius: 15px;;
+  }
+
+  .output{
+    height: 430px;
+    font-size: 6px;
+    margin: -8px 30px;
+  }
+
+  .Arigato{
+    font-size: 8px;
+  }
+}
+
